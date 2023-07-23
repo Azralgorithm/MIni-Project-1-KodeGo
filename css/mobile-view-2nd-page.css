@@ -1,0 +1,235 @@
+@media only screen and (max-width: 768px) {
+   
+    /* navs */
+
+    .hamburger {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    nav {
+        height: 100px;
+        width: 100%;
+    }
+    .nav-menu {
+        position:fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu li {
+        margin: 5px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* featured section */
+
+    .featured-section {
+        height: auto;
+        gap: 20px;
+    }
+    .featured-section-txt {
+        justify-content: center;
+    }
+    .featured-section-txt h1 {
+        font-size: 50px;
+    }
+    .feature-section-contents {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .circle {
+        display: none;
+    }
+    .feature-section-card {
+        height: 300px;
+        width: 95%;
+    }
+    .brkr-line-2,
+    .brkr-line-3 {
+        margin-top: 20px;
+        width: 40%;
+    }
+
+    /* updates section */
+
+    .updates {
+        height: auto;
+        padding: 50px auto;
+    }
+    .updates-section-txt {
+        justify-content: center;
+    }
+    .updates-section-txt h1 {
+        font-size: 60px;
+    }
+    .updates-section-contents {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .updates-section-card-mq {
+        display: block;
+    }
+    .updates-section-card-txt {
+        display: none;
+    }
+
+    /* mobile based esports secrion */
+
+    .mobile-esports-section-opening h1 {
+        font-size: 40px;
+    }
+
+    /* mlbb section */
+
+    .mlbb-section {
+        height: auto;
+    }
+    .mlbb-section-contents{
+        gap: 10px;
+        height: 900px;
+        margin: 20px 0;
+    }
+    .mlbb-section-contents a {
+        height: 180px;
+        width: 95%;
+        padding: 0 10px;
+    }
+    
+    /* codm section */
+
+    .codm-section {
+        height: auto;
+    }
+    .codm-section-contents{
+        gap: 10px;
+        height: 900px;
+        margin: 20px 0;
+    }
+    .codm-section-contents a {
+        height: 180px;
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    /* pubg section */
+
+    .pubg-section {
+        height: auto;
+    }
+    .pubg-section-contents{
+        gap: 10px;
+        height: 900px;
+        margin: 20px 0;
+    }
+    .pubg-section-contents a {
+        height: 180px;
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    /* PC based esports sections */
+
+    .PC-esports-section-opening h1 {
+        font-size: 40px;
+    }
+
+    /* lol section */
+
+    .lol-section {
+        height: auto;
+    }
+    .lol-section-contents{
+        gap: 10px;
+        height: 900px;
+        margin: 20px 0;
+    }
+    .lol-section-contents a {
+        height: 180px;
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    /* valorant section */
+
+    .valorant-section {
+        height: auto;
+    }
+    .valorant-section-contents{
+        gap: 10px;
+        height: 900px;
+        margin: 20px 0;
+    }
+    .valorant-section-contents a {
+        height: 180px;
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    /* dota section */
+
+    .dota-section {
+        height: auto;
+    }
+    .dota-section-contents{
+        gap: 10px;
+        height: 900px;
+        margin: 20px 0;
+    }
+    .dota-section-contents a {
+        height: 180px;
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    /* Moto */
+
+    .title-brand-moto {
+        font-size: 60px;
+    }
+    .moto {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    /* moto */
+
+    .footer {
+        height: 700px;
+        flex-wrap: wrap;
+    }
+    .links-and-navs {
+        width: 100%;
+        height: auto;
+        padding-left: 20px;
+        justify-content: end;
+    }
+    .nav-links ul {
+        width: 70px;
+    }
+    .footer-links {
+        width: 90%;
+    }
+    .footer-bottom-content {
+        text-align: center;
+    }
+}

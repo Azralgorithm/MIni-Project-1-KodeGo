@@ -1,0 +1,883 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Orbitron&family=Poppins:wght@500&family=Roboto:wght@500;700&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #031b36;
+}
+
+/* navigation */
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+.nav-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding-top: 34px;
+    height: 100%;
+    width: 20%;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.nav-menu {
+    display: flex;
+    height: 90%;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-items {
+    list-style-type: none;
+}
+.nav-links {
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.navBrand {
+    display: flex;
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: none;
+}
+.brand-logo {
+    height: 80px;
+    width: 70px;
+    background-image: url("../images/gz.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+/* hero section */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+   background-color: rgb(3,27,54);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.brand-presentation {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.brand-title {
+    color: #cdfafa;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 150px;
+}
+.title {
+    text-shadow:0px 0px 13px #00ffff, 0px 0px 17px #00efff;
+}
+.ws-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    padding: 0;
+}
+.description {
+    text-shadow: 4px 4px 4px black;
+}
+.btn-and-txt-container {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.before-btn-txt span {
+    text-shadow: 3px 3px 3px black;
+    color: white;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+}
+.btn-and-txt-container button {
+    height: 50px;
+    width: 100px;
+    margin-top: 30px;
+    padding: 5px;
+    
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(205,250,250);
+    box-shadow: 0px 0px 30px 10px aqua;
+    border-radius: 30px;
+    border: 3px solid rgb(205,250,250);
+}
+.btn-and-txt-container button a {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    
+    border-radius: 10px;
+}
+
+/* Introduction section */
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: #031b36;
+}
+.intro-container-1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+}
+.intro-txt-1-a {
+    display: flex;
+    align-items: center;
+}
+.intro-txt-1-a p {
+    text-align: justify;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px black;
+    font-family: "kanit",sans-serif;
+}
+.intro-img-1 {
+    height: 250px;
+    width: 500px;
+    background-image: url("https://t4.ftcdn.net/jpg/06/00/89/17/240_F_600891797_2DuadUPbT0QPlFiwfyQxaJEBbThsJWja.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+}
+.intro-txt-1-b {
+    display: none;
+}
+.intro-txt-1-b p {
+    text-align: justify;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px black;
+    font-family: "kanit",sans-serif;
+}
+.intro-container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+
+}
+.intro-img-2 {
+    height: 250px;
+    width: 500px;
+    background-image: url("https://t4.ftcdn.net/jpg/06/16/75/73/240_F_616757352_QZWcalFSYrWe6QOOGdhrqrDHQ3VN9Xrz.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+}
+.intro-txt-2 p {
+    text-align: justify;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px black;
+    font-family: "kanit",sans-serif;
+}
+
+/* mobile based esports section */
+
+.MBE-section {
+    display: flex;
+    flex-direction: column;
+    height: 980px;
+    width: 100%;
+    gap: 50px;
+    background-color: #031b36;
+}
+.page-title-1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 60px;
+    font-family: "orbitron", sans-serif;
+    background-color: #031b36;
+}
+.page-title-1 span {
+    text-align: center;
+}
+.container1 {
+    display: flex;
+    height: auto;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cards-group1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+.card-1-a {
+    height: 400px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/MLBB-Photo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-1-b {
+    height: 400px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url("../images/CODM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-1-b span {
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    font-family: "roboto", sans-serif;
+}
+.card-1-c {
+    height: 400px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/PUBGM.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.box1 {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 50px;
+}
+.space1 {
+    width: 420px;
+}
+.note1 {
+    display: flex;
+    height: 100px;
+    width: 800px;
+    background-color: rgb(44, 42, 42);
+    justify-content: end;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.note1 p{
+    color: white;
+    font-family: "kanit", sans-serif;
+    text-align: right;
+    font-size: 25px;
+    padding: 5px;
+    text-shadow: 3px 3px 3px black;
+}
+
+/* Slideshow section */
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-color: #031b36;
+}
+.page-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 900px;
+    width: 100%;
+}
+.page-txt p {
+    font-size: 45px;
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    font-family: "kanit", sans-serif;
+}
+.carousel {
+    border-radius: 20px;
+}
+.carousel-inner {
+    display: flex;    
+    align-items: center;
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+.carousel-inner div img{
+    height: 100%;
+    width: 100%;
+}
+
+/* breakers style */
+
+.breaker-1,
+.breaker-3,
+.breaker-5 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    background-color: #031b36;
+}
+.brkr-line-1, 
+.brkr-line-3,
+.brkr-line-5 {
+    width: 600px;
+}
+.brkr-head-1, 
+.brkr-head-3, 
+.brkr-head-5 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+.breaker-2, 
+.breaker-4,
+.breaker-6 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    background-color: #031b36;
+}
+.brkr-line-2, 
+.brkr-line-4,
+.brkr-line-6 {
+    width: 600px;
+}
+.brkr-head-2,
+.brkr-head-4,
+.brkr-head-6 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+/* end of breaker style  */
+
+/* PC Based Esports section */
+
+.PCBE-section {
+    display: flex;
+    flex-direction: column;
+    height: 995px;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: #031b36;
+}
+.page-title-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 80px;
+    font-family: "orbitron", sans-serif;
+    background-color: #031b36;
+}
+.page-title-2 span {
+    text-align: center;
+}
+.container2 {
+    display: flex;
+    height: auto;
+    margin-top: 70px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cards-group2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+.card-2-a {
+    height: 400px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://picfiles.alphacoders.com/544/thumb-544154.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-2-b {
+    height: 400px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url("https://w0.peakpx.com/wallpaper/221/344/HD-wallpaper-jett-jet-valorant-jett-valorant.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.card-2-c {
+    height: 400px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://w0.peakpx.com/wallpaper/378/416/HD-wallpaper-dota-2-dire-logo-radiant.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.box2 {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 50px;
+}
+.space2 {
+    width: 420px;
+}
+.note2 {
+    display: flex;
+    height: 100px;
+    width: 700px;
+    background-color: rgb(44, 42, 42);
+    justify-content: start;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+.note2 p{
+    color: white;
+    font-family: "kanit", sans-serif;
+    text-align: right;
+    font-size: 25px;
+    padding: 5px;
+    text-shadow: 3px 3px 3px black;
+    text-align: start;
+}
+
+/* FAQ's section */
+
+.FAQs {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #031b36;
+}
+.FAQs-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+}
+.FAQs-label span {
+    color: white;
+    font-size: 70px;
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+}
+.FAQ-container {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    background-image: linear-gradient(to right, rgba(1, 30, 39, 0.3), rgba(1, 30, 39, 0.3) ), url("https://i.vimeocdn.com/video/759335719-75035689128dcadca004f08ca10c98abfc94c17377e619c67e47317066e2d670-d_640x360.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.accordion {
+    width: 80%;
+}
+.accordion button {
+    font-size: 25px;
+    font-family: "Kanit", sans-serif;
+    background-color: black;
+    color: white;
+}
+.accordion-body {
+    background-color: #031b36;
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* testimonials section */
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    width: 100%;
+    background-color: #031b36;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.testimonial-label {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 400px;
+    width: 100%;
+    margin-top: 100px;
+}
+.testimonial-label span {
+    height: 100%;
+    width: 100%;
+    font-size: 90px;
+    font-family: "orbitron", sans-serif;
+    color: white;
+    text-align: center;
+}
+.testimonial-card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width:100%;
+    padding: 10px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 450px;
+    width: 250px;
+    background-color: #06448aa9;
+    border-radius: 20px; 
+}
+.testimonial-img-1 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-image: url("https://t3.ftcdn.net/jpg/02/99/04/20/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg");
+    background-color: #00efff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.testimonial-img-2 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-image: url("https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg");
+    background-color: #00efff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.testimonial-img-3 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-image: url("https://engineering.unl.edu/images/staff/Kayla-Person.jpg");
+    background-color: #00efff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.testimonial-img-4 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-image: url("https://cdn2.psychologytoday.com/assets/styles/manual_crop_1_91_1_1528x800/public/field_blog_entry_images/2018-09/shutterstock_648907024.jpg?itok=7lrLYx-B");
+    background-color: #00efff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.testimonial-txt {
+    color: white;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+}
+.testimonial-txt p {
+    font-family: "Poppins",sans-serif;
+    text-align: justify;
+    font-weight: 400;
+    text-shadow: 3px 3px 5px black;
+}
+.card-btn {
+    background-color: rgb(205,250,250);
+    color: Black;
+    border: 3px solid rgb(205,250,250);
+    box-shadow: 1px 1px 10px 5px aqua;
+    font-family: "kanit", sans-serif;
+    border-radius: 20px;
+}
+.modal-content {
+    background-color: #06448aa9;
+    border-radius: 20px;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+.modal-body {
+   font-family: "poppins", sans-serif; 
+}
+
+/* Contact us section */
+
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://dotesports.com/wp-content/uploads/2021/10/18055209/dota-2-ti9-stadium.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.contact-us form {
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    height: 425px;
+    width: 700px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+.contact-us form h1 {
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+    text-shadow: 4px solid black;
+}
+.contact-us form input {
+    height: 40px;
+    width: 290px;
+    color: white;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid white;
+}
+.contact-us form input::placeholder {
+    color: white;
+}
+.contact-us form #lastName,
+.contact-us form #mobileNumber {
+    margin-left: 20px;
+}
+.contact-us form h4 {
+    color: white;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+.contact-us form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 90px;
+    max-height: 90px;
+}
+text::-webkit-scrollbar {
+    width: 1em;
+}
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(194, 194, 194, 0.713);
+}
+.contact-us form #button {
+    border: none;
+    background: white;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    width: 100px;
+    padding: 0;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 500px;
+    width: 100%;
+    background-color: #04101d;
+}
+.socmed-icons {
+    display: flex;
+    height: 80px;
+    width: 40%;
+    font-size: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons {
+    color: white;
+}
+.footer-breaker {
+    width: 90%;
+}
+.links-and-navs {
+    width: 80%;
+    display: flex;
+    padding: 20px;
+}
+.footer-label {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 5px 50px rgb(7, 241, 241);
+    margin-bottom: 15px;
+}
+.links-and-navs ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: start;
+}
+.footer-info {
+    color: white;
+    text-align: start;
+    list-style-type: none;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.copyright span {
+    color: white;
+    font-size: 17px;
+    font-family: "poppins", sans-serif;
+}
+.footer-links {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

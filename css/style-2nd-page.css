@@ -1,0 +1,940 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Orbitron&family=Poppins:wght@500&family=Roboto:wght@500;700&family=Russo+One&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #031b36;
+    scroll-behavior: smooth;
+}
+
+/* navigation */
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+.nav-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding-top: 34px;
+    height: 100%;
+    width: 20%;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+ul {
+    display: flex;
+    height: 90%;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-items {
+    list-style-type: none;
+}
+.nav-links {
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+.navBrand {
+    display: flex;
+    height: 100%;
+    width: 25%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: none;
+}
+.brand-logo {
+    height: 80px;
+    width: 70px;
+    background-image: url("../images/gz.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+/* featured section */
+
+.featured-section {
+    display: flex;
+    height: 1000px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.featured-section-txt {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: auto;
+    width: 85%;
+    margin-bottom: 40px;
+}
+.featured-section-txt h1 {
+    color: #cdfafa;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "orbitron", sans-serif;
+    text-shadow: 0px 0px 40px aqua,0px 0px 30px;
+}
+.feature-section-contents {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 95%;
+    gap: 30px;
+}
+.feature-section-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 250px;
+    width: 80%;
+    padding: 20px;
+    background-image: linear-gradient(45deg, rgba(247, 109, 132, 0.3),rgba(30, 92, 92, 0.4),rgb(231, 107, 0.7)), url("https://c4.wallpaperflare.com/wallpaper/556/584/956/neon-colorful-blue-red-light-graffiti-hd-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 30px;
+}
+.circle {
+    height: 250px;
+    width: 250px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sml-circle-1 {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sml-circle-2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+.card-img-1 {
+    height: 98%;
+    width: 40%;
+    background-image:url("https://img.freepik.com/premium-photo/cropped-shot-esports-player-making-thumbs-up-gesture-created-with-generative-ai_762026-6849.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.card-img-2 {
+    height: 98%;
+    width: 40%;
+    background-image:url("https://www.nsba.org/-/media/ASBJ/2019/June/Game-On/Untitled-5.jpg?la=en&hash=DD4F199DAA846C44E8587691A2CA4FEAFC1958B6");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.card-img-3 {
+    height: 98%;
+    width: 40%;
+    background-image:url("https://dubsnatch.com/cdn/shop/articles/gamer-stats-measure-gamer-skill-performances-dubsnatch_2000x.jpg?v=1658858647");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+}
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    color: white;
+    font-family: "Kanit", sans-serif;
+}
+.card-txt span {
+    font-size: 30px;
+    text-shadow: 1px 2px 5px black;
+}
+.card-txt p {
+    font-size: 17px;
+    height: 60%;
+    text-shadow: 1px 2px 5px black;
+    text-align: justify;
+    padding: 10px;
+}
+
+/* breakers style */
+
+.breaker-1,
+.breaker-3,
+.breaker-5 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    background-color: #031b36;
+}
+.brkr-line-1, 
+.brkr-line-3,
+.brkr-line-5 {
+    width: 600px;
+}
+.brkr-head-1, 
+.brkr-head-3, 
+.brkr-head-5 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+.breaker-2, 
+.breaker-4,
+.breaker-6 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 130px;
+    width: 100%;
+    background-color: #031b36;
+}
+.brkr-line-2, 
+.brkr-line-4,
+.brkr-line-6 {
+    width: 600px;
+}
+.brkr-head-2,
+.brkr-head-4,
+.brkr-head-6 {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+}
+
+/* end of breaker style  */
+
+/* Updates section */
+
+.updates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1400px;
+    width: 100%;
+    background-image: linear-gradient(45deg, rgba(32, 31, 31, 0.3),rgba(0, 0, 0, 0.4)), url("https://esportsjunkie.com/wp-content/uploads/2020/02/best-esports-betting-tournaments.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.updates-section-txt {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: auto;
+    width: 85%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+.updates-section-txt h1 {
+    color: #cdfafa;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: "orbitron", sans-serif;
+    text-shadow: 0px 0px 40px aqua,0px 0px 30px;
+}
+.updates-section-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 100%;
+    gap: 10px;
+}
+.updates-sctn-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.updates-sctn-txts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.updates-section-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    background: linear-gradient(45deg, rgba(230, 92, 230, 0.5),rgba(58, 231, 231, 0.5),rgba(243, 183, 71, 0.5));
+    backdrop-filter: transparency(30px);
+    border-radius: 40px;
+}
+.updates-section-card-mq {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    padding: 30px;
+    background: linear-gradient(45deg, rgba(230, 92, 230, 0.5),rgba(58, 231, 231, 0.5),rgba(243, 183, 71, 0.5));
+    backdrop-filter: transparency(30px);
+    border-radius: 40px;
+}
+.updates-section-card-txt {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 500px;
+    background: linear-gradient(45deg, rgba(230, 92, 230, 0.5),rgba(58, 231, 231, 0.5),rgba(243, 183, 71, 0.5));
+    backdrop-filter: transparency(30px);
+    border-radius: 40px;
+}
+.updts-card-img-1 {
+    background-image: url("https://sickodds.com/wp-content/uploads/2021/12/Esports.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95%;
+    width: 95%;
+    border-radius: 40px;
+}
+.updts-card-img-2 {
+    background-image: url("https://media.istockphoto.com/id/1409046638/photo/asian-esports-team-gamer-focus-playing-rpg-first-shooter-game-in-grand-final-sport-event.webp?b=1&s=170667a&w=0&k=20&c=Me7K__ie_dA3C_Jc9Xjw6YnSeG-gyGIbnLmXYHw8ikw=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95%;
+    width: 95%;
+    border-radius: 40px;
+}
+.updts-card-img-3 {
+    background-image: url("https://www.nerdynaut.com/wp-content/uploads/2022/01/How-Long-Is-an-Esports-Tournament-950x500.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95%;
+    width: 95%;
+    border-radius: 40px;
+}
+.updts-card-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 95%;
+    width: 95%;
+}
+.updts-card-txt span {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "kanit", sans-serif;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.963);
+}
+.updts-card-txt p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "kanit", sans-serif;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.963);
+}
+
+/* Mobile based Esports Sections */
+
+.mobile-esports-section-opening {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%; 
+}
+.mobile-esports-section-opening h1 {
+    color: #cdfafa;
+    font-size: 60px;
+    font-weight: 800;
+    font-family: "orbitron", sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 40px rgb(0, 255, 213),0px 0px 30px;
+}
+
+/* MLBB section */
+
+.mlbb-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1200px;
+    width: 100%;
+}
+.banner-photo-mlbb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(50deg, rgba(24, 22, 22, 0.5),rgba(24, 22, 22, 0.5)), url("https://www.pockettactics.com/wp-content/uploads/2021/03/Mobile-Legends-Wallpaper-Miya-3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.mlbb-section-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+}
+.mlbb-section-title h1 {
+    color: #cdfafa;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "orbitron", sans-serif;
+    text-shadow: 0px 0px 40px aqua,0px 0px 30px;
+}
+.mlbb-section-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+}
+.mlbb-section-contents a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 80%;
+    background: linear-gradient(40deg, rgba(201, 68, 201, 0.7), rgba(88, 238, 238, 0.6), rgba(240, 190, 55, 0.5));
+    border-radius: 50px;
+    cursor: pointer;
+}
+.mlbb-section-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+.mlbb-card-title {
+    font-size: 20px;
+    text-shadow: 0px 0px 10px Aqua;
+}
+
+/* Call Of Duty Mobile Section */
+
+.codm-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1200px;
+    width: 100%;
+}
+.banner-photo-codm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(50deg, rgba(24, 22, 22, 0.5),rgba(24, 22, 22, 0.5)), url("https://e0.pxfuel.com/wallpapers/137/864/desktop-wallpaper-codm-call-of-duty-mobile-video-game-cod-call-of-duty-scylla-skin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.codm-section-title {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+}
+.codm-section-title h1 {
+    color: #cdfafa;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "orbitron", sans-serif;
+    text-shadow: 0px 0px 40px aqua,0px 0px 30px;
+}
+.codm-section-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+}
+.codm-section-contents a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 75%;
+    background: linear-gradient(40deg, rgba(201, 68, 201, 0.7), rgba(88, 238, 238, 0.6), rgba(240, 190, 55, 0.5));
+    border-radius: 50px;
+    cursor: pointer;
+}
+.codm-section-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+.codm-card-title {
+    font-size: 20px;
+    text-shadow: 0px 0px 10px Aqua;
+}
+
+/* PUBG section */
+
+.pubg-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1200px;
+    width: 100%;
+}
+.banner-photo-pubg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(50deg, rgba(24, 22, 22, 0.5),rgba(24, 22, 22, 0.5)), url("https://e1.pxfuel.com/desktop-wallpaper/816/723/desktop-wallpaper-2560x1440-pubg-game-1440p-resolution-games-season-10-pubg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.pubg-section-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+}
+.pubg-section-title h1 {
+    color: #cdfafa;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "orbitron", sans-serif;
+    text-shadow: 0px 0px 40px aqua,0px 0px 30px;
+}
+.pubg-section-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+}
+.pubg-section-contents a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 75%;
+    background: linear-gradient(40deg, rgba(201, 68, 201, 0.7), rgba(88, 238, 238, 0.6), rgba(240, 190, 55, 0.5));
+    border-radius: 50px;
+    cursor: pointer;
+}
+.pubg-section-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+.pubg-card-title {
+    font-size: 20px;
+    text-shadow: 0px 0px 10px Aqua;
+}
+
+/* PC based Eports Sections */
+
+.PC-esports-section-opening {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%; 
+}
+.PC-esports-section-opening h1 {
+    color: #cdfafa;
+    font-size: 60px;
+    font-weight: 800;
+    font-family: "orbitron", sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 40px rgb(0, 255, 213),0px 0px 30px;
+}
+
+/* lol section */
+
+.lol-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1200px;
+    width: 100%;
+}
+.banner-photo-lol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(50deg, rgba(24, 22, 22, 0.5),rgba(24, 22, 22, 0.5)), url("https://www.pcclean.io/wp-content/uploads/2019/04/559308.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.lol-section-title {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+}
+.lol-section-title h1 {
+    color: #cdfafa;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "orbitron", sans-serif;
+    text-shadow: 0px 0px 40px aqua,0px 0px 30px;
+}
+.lol-section-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+}
+.lol-section-contents a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 75%;
+    background: linear-gradient(40deg, rgba(201, 68, 201, 0.7), rgba(88, 238, 238, 0.6), rgba(240, 190, 55, 0.5));
+    border-radius: 50px;
+    cursor: pointer;
+}
+.lol-section-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+.lol-card-title {
+    font-size: 20px;
+    text-shadow: 0px 0px 10px Aqua;
+}
+
+/* valorant section */
+
+.valorant-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1200px;
+    width: 100%;
+}
+.banner-photo-valorant {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(50deg, rgba(24, 22, 22, 0.5),rgba(24, 22, 22, 0.5)), url("https://www.xtrafondos.com/en/descargar.php?id=5474&resolucion=2560x1440");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.valorant-section-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+}
+.valorant-section-title h1 {
+    color: #cdfafa;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "orbitron", sans-serif;
+    text-shadow: 0px 0px 40px aqua,0px 0px 30px;
+}
+.valorant-section-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+}
+.valorant-section-contents a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 75%;
+    background: linear-gradient(40deg, rgba(201, 68, 201, 0.7), rgba(88, 238, 238, 0.6), rgba(240, 190, 55, 0.5));
+    border-radius: 50px;
+    cursor: pointer;
+}
+.valorant-section-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+.valorant-card-title {
+    font-size: 20px;
+    text-shadow: 0px 0px 10px Aqua;
+}
+
+/* dota 2 section */
+
+.dota-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 1200px;
+    width: 100%;
+}
+.banner-photo-dota{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(50deg, rgba(24, 22, 22, 0.5),rgba(24, 22, 22, 0.5)), url("https://images.alphacoders.com/522/522959.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.dota-section-title {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 200px;
+    width: 80%;
+}
+.dota-section-title h1 {
+    color: #cdfafa;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "orbitron", sans-serif;
+    text-shadow: 0px 0px 40px aqua,0px 0px 30px;
+}
+.dota-section-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 800px;
+    width: 100%;
+}
+.dota-section-contents a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 75%;
+    background: linear-gradient(40deg, rgba(201, 68, 201, 0.7), rgba(88, 238, 238, 0.6), rgba(240, 190, 55, 0.5));
+    border-radius: 50px;
+    cursor: pointer;
+}
+.dota-section-card {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    color: white;
+    font-family: "poppins", sans-serif;
+}
+.dota-card-title {
+    font-size: 20px;
+    text-shadow: 0px 0px 10px Aqua;
+}
+
+/* brand agenda */
+
+.brand-moto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?cs=srgb&dl=pexels-lucie-liz-3165335.jpg&fm=jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.title-brand-moto {
+    color: #cdfafa;
+    text-shadow: 0px 10px 50px rgba(31, 236, 236, 0.781);
+    font-family: "Orbitron", sans-serif;
+    font-size: 100px;
+    font-weight: 500;
+    border-radius: 50px;
+}
+.moto {
+    color: #cdfafa;
+    text-shadow: 0px 0px 20px rgba(31, 236, 236, 0.781);
+    font-family: "Kanit", sans-serif;
+    font-size: 50px;
+    font-weight: 450;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    height: 600px;
+    width: 100%;
+    background-color: #04101d;
+}
+.socmed-icons {
+    display: flex;
+    height: 80px;
+    width: 40%;
+    font-size: 30px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.icons {
+    color: white;
+}
+.footer-breaker {
+    width: 90%;
+}
+.contact-details ul {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: start;
+}
+.contact-details ul li {
+    display: flex;
+    justify-content: start;
+    gap: 3px;
+}
+.links-and-navs {
+    width: 80%;
+    display: flex;
+    padding: 20px;
+}
+.footer-label {
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    text-shadow: 0px 5px 50px rgb(7, 241, 241);
+    margin-bottom: 15px;
+}
+.links-and-navs ul {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: start;
+}
+.footer-info {
+    color: white;
+    text-align: start;
+    list-style-type: none;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.copyright {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.copyright span {
+    color: white;
+    font-size: 17px;
+    font-family: "poppins", sans-serif;
+}
+.footer-links {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

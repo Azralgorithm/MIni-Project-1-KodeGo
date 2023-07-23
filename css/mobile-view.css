@@ -1,0 +1,239 @@
+@media only screen and (max-width: 768px) {
+   
+    /* navs */
+
+    .hamburger {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    nav {
+        height: 100px;
+        width: 100%;
+    }
+    .nav-menu {
+        position:fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu li {
+        margin: 5px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* hero section */
+
+    .brand-presentation {
+        padding: 10px;
+    }
+    .title {
+        font-size: 90px;
+    }
+
+    /* breakers */
+
+    .brkr-line-2,
+    .brkr-line-4,
+    .brkr-line-6 {
+        width: 40%;
+    }
+    .brkr-line-1,
+    .brkr-line-3,
+    .brkr-line-5 {
+        width: 40%;
+    }
+
+    /* introduction */
+
+    .introduction {
+        height: auto;
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .intro-container-1,
+    .intro-container-2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .intro-txt-1-a {
+        display: none;
+    }
+    .intro-txt-1-b {
+        display: block;
+    }
+
+    /* mobile based esports section  */
+
+    .MBE-section {
+        height: 1900px;
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+    .container1 {
+        height: 1080px;
+        
+    }
+    .cards-group1 {
+        margin: 30px;
+        height: 100%;
+        flex-direction: column;
+    }
+    .card-1-a,
+    .card-1-b,
+    .card-1-c {
+        height: 350px;
+    }
+    .note1 {
+        height: 130px;
+    }
+    .note1 p {
+        font-size: 20px;
+    }
+
+    /* slideshow */
+
+    .page-content {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .carousel-inner {
+        height: 300px;
+        width: 500px;
+    }
+
+    /* pc based esports */
+
+    .PCBE-section {
+        height: 1900px;
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+    .container2 {
+        height: 1080px;
+        
+    }
+    .cards-group2 {
+        margin: 30px;
+        height: 100%;
+        flex-direction: column;
+    }
+    .card-2-a,
+    .card-2-b,
+    .card-2-c {
+        height: 350px;
+    }
+    .note2 {
+        height: 130px;
+    }
+    .note2 p {
+        font-size: 20px;
+    }
+
+    /* FAQ's section */
+
+    .FAQs {
+        height: auto;
+        gap: 30px;
+    }
+    .FAQs-label span {
+        font-size: 50px;
+    }
+    .FAQ-container {
+        height: auto;
+    }
+
+    /* testimonials */
+
+    .testimonials {
+        height: auto;
+    }
+    .testimonial-label {
+        height: 200px;
+    }
+    .testimonial-label span {
+        font-size: 60px;
+    }
+    .testimonial-card-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /* Contact us section */
+
+    .contact-us {
+        height: auto;
+        padding: 70px
+    }
+    .contact-us form {
+        height: auto;
+        width: 80%;
+        padding: 10px;
+    }
+    .contact-us form #lastName,
+    .contact-us form #mobileNumber {
+    margin-left: 0;
+}
+    .contact-us form h4 {
+        color: white;
+        font-weight: 300;
+        width: 600px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .contact-us form textarea {
+        min-width: 80%;
+        max-width: 80%;
+        min-height: 90px;
+        max-height: 90px;
+    }
+    .contact-us form #button {
+        border: none;
+        background: white;
+        border-radius: 20px;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #333;
+        width: 100px;
+        padding: 0;
+        margin-right: 250px;
+        margin-bottom: 30px;
+        transition: 0.3s;
+    }
+
+    /* footer */
+
+    .footer {
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .links-and-navs {
+        width: 100%;
+    }
+    .footer-links {
+        width: 90%;
+    }
+    .footer-bottom-content {
+        text-align: center;
+    }
+}
