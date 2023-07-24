@@ -45,7 +45,10 @@
         padding: 10px;
     }
     .title {
-        font-size: 50px;
+        font-size: 90px;
+    }
+    .description {
+        font-size: 30px;
     }
 
     /* breakers */
